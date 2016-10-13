@@ -1,0 +1,34 @@
+{
+  "name": "simple-scorm-packager",
+  "version": "0.1.0",
+  "description": "Simple way to package your scorm projects",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmihaidaniel/simple-scorm-packager.git"
+  },
+  "keywords": [
+    "lms",
+    "scorm",
+    "manifest",
+    "package"
+  ],
+  "author": "lmihaidaniel <lacatusu.mihai.daniel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmihaidaniel/simple-scorm-packager/issues"
+  },
+  "homepage": "https://github.com/lmihaidaniel/simple-scorm-packager#readme",
+  "dependencies": {
+    "fs-extra": "latest",
+    "jsonschema": "latest",
+    "xmlbuilder": "latest",
+    "archiver": "latest"
+  }
+}
