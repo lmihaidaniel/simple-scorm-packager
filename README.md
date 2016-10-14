@@ -1,3 +1,5 @@
+`version 0.1.3`
+
 ## Documentation
 
 Creates SCORM package from source directory.
