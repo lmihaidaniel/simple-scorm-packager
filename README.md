@@ -27,11 +27,11 @@ npm install simple-scorm-packager
 * `startingPage` {String} Uses index.html if left empty
 * `source` {String} The path to files from which the package will be created
 * `package` {Object} Available options:
-    * `version` {Number} Package version
-    * `name` {String} Package name
-    * `date` {String} Package date
-    * `output` {String} The folder path where the zip file is created
-    * `zip` {Boolean} Enable zip automated packaging
+    * `name` {String} Package name, defaults to scorm title
+    * `version` {String} Package version (major.minor.patch), defaults to `1.0.0`
+    * `date` {String} Package date, defaults to now date(YYYYMMDD)
+    * `zip` {Boolean} Archives package (`NAME_VERSION_DATE.zip`), false by default
+    * `outputFolder` {String} The folder path where you want the zip file
 
 ## USAGE
 
@@ -46,11 +46,11 @@ ssp({
   identifier: '00',
   masteryScore: 80,
   startingPage: 'index.html',
-  source: 'path to your files',
+  source: './myProjectFolder',
   package: {
-    version: 1.0,
+    version: "0.0.1",
     zip: true,
-    outpup: 'scorm.zip'
+    outputFolder: './scormPackages'
   }
 }, function(msg){
   console.log(msg);
