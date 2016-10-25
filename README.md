@@ -1,4 +1,4 @@
-`version 0.1.3`
+`version 0.1.5`
 
 ## Documentation
 
@@ -31,11 +31,14 @@ npm install simple-scorm-packager
 * `package` {Object} Available options:
     * `zip` {Boolean} Archives package (`NAME_VERSION_DATE.zip`), false by default
     * `outputFolder` {String} The folder path where you want the zip file
+    * `size` {Bytes} Provide the package size, automatically calculated when not set,
     * `name` {String} Package name, defaults to scorm title
-    * `author` {String} Author name, used as default for vcard
+    * `author` {String} Author name, used as default for vcard if not provided
     * `version` {String} Package version (major.minor.patch), defaults to `1.0.0`
     * `date` {String} Package date, defaults to now date(YYYY-MM-DD)
     * `vcard` {Object} :
+      * `author` {String} Author name, when not provided defaults to package.author
+      * `org` {String} Organization name, defaults to `organization`
       * `tel` {String} Telephone number(s)
       * `address` {String} Address
       * `mail` {String} E-mail contact
