@@ -1,6 +1,6 @@
 {
   "name": "simple-scorm-packager",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Simple way to package your scorm projects",
   "main": "lib/index.js",
   "files": [
