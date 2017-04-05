@@ -1,5 +1,9 @@
 # scopackager changelog
 
+## 0.2.2
+
+* fixed package.json
+
 ## 0.2.1
 
 * renamed CHANGELOG.MD to CHANGELOG.md
