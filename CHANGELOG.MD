@@ -1,5 +1,9 @@
 # scopackager changelog
 
+## 0.2.1
+
+* renamed CHANGELOG.MD to CHANGELOG.md
+
 ## 0.2.0
 
 * CLI implementation init
