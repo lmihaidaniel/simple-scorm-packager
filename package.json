@@ -1,11 +1,16 @@
 {
   "name": "simple-scorm-packager",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Simple way to package your scorm projects",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
+  "bin": {
+      "simple-scorm-packager": "./cli.js",
+      "scopackager": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +22,7 @@
     "lms",
     "scorm",
     "manifest",
+    "interactive",
     "package"
   ],
   "author": "lmihaidaniel <lacatusu.mihai.daniel@gmail.com>",
@@ -29,6 +35,8 @@
     "fs-extra": "latest",
     "jsonschema": "latest",
     "xmlbuilder": "latest",
-    "archiver": "latest"
+    "archiver": "latest",
+    "inquirer": "latest",
+    "inquirer-directory": "latest"
   }
 }

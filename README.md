@@ -1,4 +1,4 @@
-`version 0.1.5`
+`version 0.2.0`
 
 ## Documentation
 
@@ -19,8 +19,8 @@ npm install simple-scorm-packager
 
 * `version` {String} Version of schema. Available options:
     * '1.2'
-    * '2004 3rd Edition'
-    * '2004 4th Edition'
+    * '2004 3rd Edition' alias '2004.3' alias '2004v3'
+    * '2004 4th Edition' alias '2004.4' alias '2004v4'
 * `organization` {String} Company name
 * `language` {String} Language of the package ( ISO )
 * `title` {String}
@@ -54,12 +54,12 @@ npm install simple-scorm-packager
     * `rights` {String} Copyright informations
 
 
-## USAGE
+## Programatically usage
 
 ```javascript
-var ssp = require('simple-scorm-packager');
+var scopackager = require('simple-scorm-packager');
 
-ssp({
+scopackager({
   version: '2004 4th Edition',
   organization: 'Test Company',
   title: 'Test Course',
@@ -76,4 +76,13 @@ ssp({
 }, function(msg){
   console.log(msg);
 });
+```
+
+## USE IT AS CLI
+if installed globally you can use it directly in command line
+
+```bash
+$ simple-scorm-packager
+or
+$ scopackager
 ```
