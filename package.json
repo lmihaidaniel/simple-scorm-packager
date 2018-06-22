@@ -1,11 +1,11 @@
 {
   "name": "simple-scorm-packager",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Simple way to package your scorm projects",
   "main": "lib/index.js",
   "bin": {
-      "simple-scorm-packager": "./cli.js",
-      "scopackager": "./cli.js"
+    "simple-scorm-packager": "./cli.js",
+    "scopackager": "./cli.js"
   },
   "preferGlobal": true,
   "scripts": {
