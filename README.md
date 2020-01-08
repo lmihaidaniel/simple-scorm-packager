@@ -1,4 +1,4 @@
-`version 0.2.3`
+`version 1.0.0`
 
 ## Documentation
 
@@ -15,25 +15,27 @@ Creates SCORM package from source directory.
 npm install simple-scorm-packager
 ```
 
-## Initialization Options
+## Initialization Options Object
+{type} [default]
 
-* `version` {String} Version of schema. Available options:
+* `version` {string} ['1.2'] Version of SCORM schema. Available options:
     * '1.2'
     * '2004 3rd Edition' alias '2004.3' alias '2004v3'
     * '2004 4th Edition' alias '2004.4' alias '2004v4'
-* `organization` {String} Company name
-* `language` {String} Language of the package ( ISO )
-* `title` {String}
-* `identifier` {String} Uses 0 and course title if left empty
-* `masteryScore` {Number} Uses 80 if left empty
-* `startingPage` {String} Uses index.html if left empty
-* `source` {String} The path to files from which the package will be created
-* `package` {Object} Available options:
-    * `zip` {Boolean} Archives package (`NAME_VERSION_DATE.zip`), false by default
-    * `outputFolder` {String} The folder path where you want the zip file
-    * `size` {Bytes} Provide the package size, automatically calculated when not set,
-    * `name` {String} Package name, defaults to scorm title
-    * `author` {String} Author name, used as default for vcard if not provided
+* `organization` {string} [''] Company name
+* `language` {string} ['en'] Language of the package ( ISO )
+* `title` {string} ['']
+* `identifier` {string} [null] If empty, identifier is generated using:
+\`${package.author || 'com'}.${organization || 'company'}.${title || ''}.${generated uuid}\`
+* `masteryScore` {number} [80]
+* `startingPage` {string} ['index.html']
+* `source` {string} ['./'] The path to files from which the package will be created
+* `package` {object} Available options:
+    * `zip` {boolean} [false] Archives package (`NAME_VERSION_DATE_TIMESTAMP.zip`)
+    * `outputFolder` {string} ['./scorm'] The folder path where you want the zip file
+    * `size` {number} [null] Provide the package size in bytes, automatically calculated when not set,
+    * `name` {string} [\`{$title}\`] Package name, defaults to scorm title
+    * `author` {string} [''] Author name, used as default for vcard if not provided
     * `version` {String} Package version (major.minor.patch), defaults to `1.0.0`
     * `date` {String} Package date, defaults to now date(YYYY-MM-DD)
     * `vcard` {Object} :
@@ -47,7 +49,7 @@ npm install simple-scorm-packager
     * `keywords` {Array} Keywords
     * `duration` {String} The time the media takes to play through, format PT#M#S
     * `typicalDuration` {String} The time it will take for a typical learner to fully experience the program, format PT#M#S
-    * `requirements` {Array of Objects of the following structure} : 
+    * `requirements` {Array of Objects of the following structure} :
       * `type` {String} The type of requirement, eg.: Browser, Os
       * `name` {String} The name of the type of requirement, eg.: Microsoft Internet Explorer
       * `version` {String} The minimum version of the requirement
