@@ -82,7 +82,7 @@ npm install simple-scorm-packager
 ```
 
 ## Adding it to npm scripts
-If you are packaging a projects which utilizes npm and has a package.json file, follow the instructions below for adding a SCORM packager to your npm scripts.
+If you are packaging a project which utilizes npm and has a package.json file, follow the instructions below for adding a SCORM packager to your npm scripts.
 1. Create a JavaScript file (typically at the root of your project in the same directory as package.json) `scoPackager.js`
 2. The file should contain code to execute this package. Example:
 ```javascript
