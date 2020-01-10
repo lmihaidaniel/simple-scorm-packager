@@ -1,11 +1,12 @@
 # scopackager changelog
 
-## 1.0.0
+## 0.2.4
 
 * package.vcard.org value is now correctly assigned
-* language defaults changed to 'en' and any default string values changed to english
+* language defaults changed to 'en' and any default string values (metadata descriptions) changed to english
 * modify README.md options formatting to show all default values
 * add timestamp to .zip file outputs so repeated packaging doesn't overwrite existing archives
+* fixed typo in metadata.js (appearence -> appearance)
 
 ## 0.2.3
 
