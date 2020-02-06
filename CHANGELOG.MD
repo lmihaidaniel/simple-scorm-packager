@@ -1,5 +1,8 @@
 # scopackager changelog
 
+## 0.2.5
+* changed behavior of adding timestamp to .zip file: by default, this is *not* added. It can be added by setting `package.appendTimeToOutput: true` in the options object.
+
 ## 0.2.4
 
 * package.vcard.org value is now correctly assigned

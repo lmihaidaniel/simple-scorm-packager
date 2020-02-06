@@ -1,4 +1,4 @@
-`version 1.0.0`
+`version 0.2.5`
 
 ## Documentation
 
@@ -31,7 +31,8 @@ npm install simple-scorm-packager
 * `startingPage` {string} ['index.html']
 * `source` {string} ['./'] The path to files from which the package will be created
 * `package` {object} Available options:
-    * `zip` {boolean} [false] Archives package (`NAME_VERSION_DATE_TIMESTAMP.zip`)
+    * `zip` {boolean} [false] Archives package (`NAME_VERSION_DATE.zip`)
+    * `appendTimeToOutput` {boolean} [false] Add full Unix time milliseconds to the zip file output, so repeated builds are unique (`NAME_VERSION_DATE_TIMESTAMP.zip`)
     * `outputFolder` {string} ['./scorm'] The folder path where you want the zip file
     * `size` {number} [null] Provide the package size in bytes, automatically calculated when not set,
     * `name` {string} [\`{$title}\`] Package name, defaults to scorm title
