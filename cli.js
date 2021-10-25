@@ -34,6 +34,7 @@ var settings = {
   language: "en",
   organization: "",
   title: getPackageName(),
+  useUuidForIdentifierManifest: true,
   identifier: "",
   masteryScore: 80,
   startingPage: "index.html",

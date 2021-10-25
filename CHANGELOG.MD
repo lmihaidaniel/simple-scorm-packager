@@ -1,5 +1,8 @@
 # scopackager changelog
 
+## 0.2.6
+* setting `useUuidForIdentifierManifest: false` in the options object, the `identifier` will be used for the manifest identifier.
+
 ## 0.2.5
 * changed behavior of adding timestamp to .zip file: by default, this is *not* added. It can be added by setting `package.appendTimeToOutput: true` in the options object.
 

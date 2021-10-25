@@ -1,4 +1,4 @@
-`version 0.2.5`
+`version 0.2.6`
 
 ## Documentation
 
@@ -25,6 +25,8 @@ npm install simple-scorm-packager
 * `organization` {string} [''] Company name
 * `language` {string} ['en'] Language of the package ( ISO )
 * `title` {string} ['']
+* `useUuidForIdentifierManifest` {boolean} [true] If true, property identifier in config is ignored for the manifest identifier, it will be calculated using:
+  \`${package.author || 'com'}.${organization || 'company'}.${title || ''}.${generated uuid}\`  
 * `identifier` {string} [null] If empty, identifier is generated using:
 \`${package.author || 'com'}.${organization || 'company'}.${title || ''}.${generated uuid}\`
 * `masteryScore` {number} [80]
