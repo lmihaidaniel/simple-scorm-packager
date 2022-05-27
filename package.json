@@ -1,6 +1,6 @@
 {
   "name": "simple-scorm-packager",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Simple way to package your scorm projects",
   "main": "lib/index.js",
   "bin": {
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/lmihaidaniel/simple-scorm-packager#readme",
   "dependencies": {
-    "fs-extra": "latest",
-    "jsonschema": "latest",
-    "xmlbuilder": "latest",
-    "archiver": "latest",
-    "inquirer": "latest",
-    "inquirer-directory": "latest"
+    "archiver": "^5.3.1",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.4",
+    "inquirer-directory": "^2.2.0",
+    "jsonschema": "^1.4.1",
+    "xmlbuilder": "^15.1.1"
   }
 }
